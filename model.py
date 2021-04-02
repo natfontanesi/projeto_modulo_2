@@ -18,6 +18,8 @@ class Bit_bucket_Model():
 
     def convert_json(self,json):
         arquivo = pandas.read_json(json)
+        df= pandas.DataFrame(arquivo)
+        print(df)
         return arquivo.to_csv('bitbucket.csv')
 
 
