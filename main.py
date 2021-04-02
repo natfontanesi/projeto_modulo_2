@@ -18,12 +18,16 @@ Insira um termo de pesquisa: ")
 user = userView()
 user.set_user(input())
 
+print("Qual tipo de arquivo, JSON/CSV: ")
+user.set_tipo(input())
+
 #perguntar em qual formato o usuário deseja a resposta
 resposta = user.resposta()
 json_str = json.dumps(resposta)
 json_dict = json.loads(json_str)
 
 print(json.dumps(json_dict, indent = 3))
+
 
 
 

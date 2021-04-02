@@ -8,6 +8,8 @@ class Requisicao_Bit:
         retorna_objeto=[]
         if retorna_tipo=="csv":
             retorna_objeto = self.model.make_csv(user)
+
         elif retorna_tipo=="json":
             retorna_objeto = self.model.make_json(user)
+
         return retorna_objeto
