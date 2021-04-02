@@ -1,7 +1,5 @@
 from view import userView
 import json
-import pprint
-
 
 print(
     "Bem-vindo à API Bitbucket! Com esta API:  \n \
@@ -18,8 +16,8 @@ print(
 Insira um termo de pesquisa: ")
 
 user = userView()
-
 user.set_user(input())
+
 #perguntar em qual formato o usuário deseja a resposta
 resposta = user.resposta()
 json_str = json.dumps(resposta)
