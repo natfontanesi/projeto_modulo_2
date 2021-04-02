@@ -1,4 +1,7 @@
 from view import userView
+import json
+import pprint
+
 
 print(
     "Bem-vindo à API Bitbucket! Com esta API:  \n \
@@ -13,7 +16,18 @@ print(
 - Acesse, crie, atualize ou exclua um comentário. \n \
  \n \
 Insira um termo de pesquisa: ")
+
 user = userView()
+
 user.set_user(input())
 #perguntar em qual formato o usuário deseja a resposta
-print(user.resposta())
+resposta = user.resposta()
+json_str = json.dumps(resposta)
+json_dict = json.loads(json_str)
+
+print(json.dumps(json_dict, indent = 3))
+
+
+
+
+
