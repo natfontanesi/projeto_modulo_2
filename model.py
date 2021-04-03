@@ -6,14 +6,15 @@ class Bit_bucket_Model():
         self.url='https://api.bitbucket.org/2.0/repositories'
 
     def get(self,user):
-        return requests.get(f'{self.url}/{user}')
+        self.request = requests.get(f'{self.url}/{user}')
+        return self.request
 
     def make_json(self,user):
         response = self.get(user)
         return response.json()
 
-    def status_reponse(self):
-        self.status = requests.Response()
+    def status_code(self):
+        return self.x
     
     def make_csv(self,user):
         response = self.get(user)
