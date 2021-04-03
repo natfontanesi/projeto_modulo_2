@@ -14,5 +14,5 @@ class userView:
     def resposta(self):
         return self.controller.get_user(self.user,self.tipo)
     
-    def status(self):
-        return self.controller.get_status()
+    def get_status_view(self):
+        return self.controller.get_status_controller()

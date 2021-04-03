@@ -8,13 +8,13 @@ class Bit_bucket_Model():
     def get(self,user):
         self.request = requests.get(f'{self.url}/{user}')
         return self.request
+    
+    def get_status(self):
+        return self.request.status_code
 
     def make_json(self,user):
         response = self.get(user)
         return response.json()
-
-    def status_code(self):
-        return self.x
     
     def make_csv(self,user):
         response = self.get(user)

@@ -14,6 +14,6 @@ class Requisicao_Bit:
 
         return retorna_objeto
     
-    def get_status(self):
-        return self.model.status_code
+    def get_status_controller(self):
+        return self.model.get_status()
         
