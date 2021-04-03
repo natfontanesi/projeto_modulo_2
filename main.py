@@ -28,6 +28,8 @@ json_dict = json.loads(json_str)
 
 print(json.dumps(json_dict, indent = 3))
 
+print(user.status())
+
 
 
 

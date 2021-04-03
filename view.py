@@ -4,6 +4,7 @@ class userView:
     def __init__(self):
         self.controller = Requisicao_Bit()
         
+        
     def set_user(self, user):
         self.user = user    
         
@@ -12,3 +13,6 @@ class userView:
 
     def resposta(self):
         return self.controller.get_user(self.user,self.tipo)
+    
+    def status(self):
+        return self.controller.get_status()

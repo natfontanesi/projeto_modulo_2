@@ -12,6 +12,9 @@ class Bit_bucket_Model():
         response = self.get(user)
         return response.json()
 
+    def status_reponse(self):
+        self.status = requests.Response()
+    
     def make_csv(self,user):
         response = self.get(user)
         return self.convert_json(response.content)

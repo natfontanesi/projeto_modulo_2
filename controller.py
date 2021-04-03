@@ -13,3 +13,7 @@ class Requisicao_Bit:
             retorna_objeto = self.model.make_json(user)
 
         return retorna_objeto
+    
+    def get_status(self):
+        status = self.model.status_reponse
+        return status
