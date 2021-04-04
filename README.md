@@ -6,4 +6,24 @@ Neste projeto, a equipe desenvolveu um software de requisição de API's, dentro
 recebeu duas flags, retornando os dados em dois formatos diferentes:
 
 JSON;
-CSV.
+
+
+CSV.  
+
+
+
+
+
+### Membros da equipe:  
+
+
+[Caroline Suwaki](https://github.com/csuwaki/)  
+
+
+[Isabela Oliveira](https://github.com/isaolivlima)  
+
+
+[Natascha Weber](https://github.com/natfontanesi)  
+
+
+[Kauana Rodrigues](https://github.com/kku2020)  
