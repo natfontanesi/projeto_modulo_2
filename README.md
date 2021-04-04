@@ -1,4 +1,8 @@
-# Projeto Final - Módulo 2
+<div align="center">
+ 
+ # Projeto Final - Módulo 2
+ 
+ </div>
 ---
 ## BITBUCKET  API
 ---
