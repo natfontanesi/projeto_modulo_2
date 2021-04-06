@@ -27,7 +27,7 @@ json_str = json.dumps(resposta)
 json_dict = json.loads(json_str)
 print(json.dumps(json_dict, indent = 3))
 
-print(f'O código é {usuario.get_status_view()}')
+print(f'{usuario.get_status_view()}')
 
 
 
