@@ -1,14 +1,17 @@
-from controller import Requisicao_Bit
+from controller import Requisition_Bit_Controller
 
 class userView:
     def __init__(self):
-        self.controller = Requisicao_Bit()
+        self.controller = Requisition_Bit_Controller                            ()
         
     def set_user(self, user):
         self.user = user    
         
-    def set_tipo(self, tipo):
-        self.tipo = tipo
+    def set_type(self, type):
+        self.type = type
 
-    def resposta(self):
-        return self.controller.get_user(self.user,self.tipo)
+    def response(self):
+        return self.controller.get_user(self.user,self.type)
+    
+    def get_status_view(self):
+        return self.controller.get_status_controller()
