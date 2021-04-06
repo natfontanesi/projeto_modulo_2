@@ -1,7 +1,9 @@
 from view import userView
 import json
+import sys
+from termcolor import colored, cprint
 
-print(
+cprint(
     "Bem-vindo à API Bitbucket! Com esta API:  \n \
 \n \
 - Acesse informações públicas do usuário;  \n \
@@ -13,15 +15,15 @@ print(
 - Acesse, crie, atualize ou exclua um problema; \n \
 - Acesse, crie, atualize ou exclua um comentário. \n \
  \n \
-Insira um termo de pesquisa: ")
+Insira um termo de pesquisa: ",'green')
 
 usuario = userView()
 usuario.set_user(input())
 
-print("Qual tipo de arquivo, JSON/CSV: ")
+cprint("Qual tipo de arquivo, JSON/CSV: ",'green')
 tipo_arquivo= input().lower()
 while tipo_arquivo!="json" and tipo_arquivo!="csv":
-    print("Tipo inválido, digite novamente!")
+    cprint("Tipo inválido, digite novamente!",'green')
     tipo_arquivo= input().lower()
 usuario.set_type(tipo_arquivo)
 
