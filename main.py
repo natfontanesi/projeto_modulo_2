@@ -19,7 +19,12 @@ usuario = userView()
 usuario.set_user(input())
 
 print("Qual tipo de arquivo, JSON/CSV: ")
-usuario.set_type(input())
+tipo_arquivo= input().lower()
+while tipo_arquivo!="json" and tipo_arquivo!="csv":
+    print("Tipo inválido, digite novamente!")
+    tipo_arquivo= input().lower()
+usuario.set_type(tipo_arquivo)
+
 
 #perguntar em qual formato o usuário deseja a resposta
 resposta = usuario.response()
@@ -28,9 +33,3 @@ print(f'{usuario.get_status_view()}')
 json_str = json.dumps(resposta)
 json_dict = json.loads(json_str)
 print(json.dumps(json_dict, indent = 3))
-
-
-
-
-
-
