@@ -17,14 +17,14 @@ class Requisition_Bit_Controller:
     def get_status_controller(self):
         self.retorno = self.model.get_status()
         if self.retorno == 200:
-            return("Funciona!")
+            return("Requisição bem sucedida.")
         elif self.retorno == 404:
-            return ("Não encontrado!")
+            return ("O servidor não encontrou o recurso solicitado.")
         elif self.retorno == 500:
-            return("Servidor fora do ar")
+            return("Servidor fora do ar.")
         elif self.retorno == 401:
-            return("Não autorizado")
+            return("Não autorizado.")
         elif self.retorno == 400:
-            return("Bad request")
+            return("Bad request.")
         else:
-            return("Erro desconhecido")
+            return("Erro desconhecido.")
