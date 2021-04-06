@@ -26,3 +26,5 @@ class Requisition_Bit_Controller:
             return("Não autorizado")
         elif self.retorno == 400:
             return("Bad request")
+        else:
+            return("Erro desconhecido")
