@@ -23,11 +23,13 @@ usuario.set_type(input())
 
 #perguntar em qual formato o usuário deseja a resposta
 resposta = usuario.response()
+print(f'{usuario.get_status_view()}')
+
 json_str = json.dumps(resposta)
 json_dict = json.loads(json_str)
 print(json.dumps(json_dict, indent = 3))
 
-print(f'{usuario.get_status_view()}')
+
 
 
 
