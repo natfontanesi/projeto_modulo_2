@@ -15,5 +15,17 @@ class Requisition_Bit_Controller:
         return rtrn_obj
     
     def get_status_controller(self):
-        return self.model.get_status()
+        self.retorno= self.model.get_status()
+        if self.retorno == 200:
+            return("Requisição bem sucedida.")
+        elif self.retorno == 404:
+            return ("O servidor não encontrou o recurso solicitado.")
+        elif self.retorno == 500:
+            return("Servidor fora do ar.")
+        elif self.retorno == 401:
+            return("Não autorizado.")
+        elif self.retorno == 400:
+            return("Bad request.")
+        else:
+            return("Erro desconhecido.")
         

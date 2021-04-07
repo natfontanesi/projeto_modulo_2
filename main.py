@@ -1,5 +1,4 @@
 from view import userView
-import json
 from termcolor import cprint
 
 cprint(

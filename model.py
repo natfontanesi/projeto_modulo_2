@@ -21,12 +21,10 @@ class Bit_bucket_Model():
         json_str = json.dumps(resposta)
         json_dict = json.loads(json_str)
         with open('saida.json', 'w') as arq:
-            json.dump(json_dict, arq, indent=2)
+            json.dump(json_dict, arq, indent=4)
         
-        return cprint(json.dumps(json_dict, indent = 3),'green')
+        return cprint(json.dumps(json_dict, indent = 4),'green')
 
-        
-    
     
     def make_csv(self,user):
         response = self.get(user)
