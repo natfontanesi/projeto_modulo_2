@@ -1,5 +1,7 @@
 import requests 
-import pandas 
+import pandas
+import json
+from termcolor import cprint 
 
 class Bit_bucket_Model():
     def __init__(self):
@@ -14,7 +16,12 @@ class Bit_bucket_Model():
 
     def make_json(self,user):
         response = self.get(user)
-        return response.json()
+        resposta =response.json()
+        
+        json_str = json.dumps(resposta)
+        json_dict = json.loads(json_str)
+        return cprint(json.dumps(json_dict, indent = 3),'green')
+    
     
     def make_csv(self,user):
         response = self.get(user)

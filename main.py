@@ -32,6 +32,4 @@ usuario.set_type(tipo_arquivo)
 resposta = usuario.response()
 cprint(f'{usuario.get_status_view()}','green')
 
-json_str = json.dumps(resposta)
-json_dict = json.loads(json_str)
-cprint(json.dumps(json_dict, indent = 3),'green')
+
