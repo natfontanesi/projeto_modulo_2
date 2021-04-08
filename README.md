@@ -29,8 +29,9 @@ CSV.
 
 
 
-
+<div align="center">
 ### Membros da equipe:  
 
 
 [Caroline Suwaki](https://github.com/csuwaki/)  👥 [Isabela Oliveira](https://github.com/isaolivlima) 👥 [Natascha Weber](https://github.com/natfontanesi) 👥 [Kauana Rodrigues](https://github.com/kku2020)  
+ </div>
