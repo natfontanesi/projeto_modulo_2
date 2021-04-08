@@ -18,7 +18,7 @@ CSV.
 
 ----
 
-## Com a bitbucket API, é possível: 🖥️
+## 💻 Com a bitbucket API, é possível: 
 - Acessar informações públicas do usuário;
 - Acessar repositórios públicos ou privados, tags ou branches;
 - Criar, atualizar ou excluir um de seus repositórios;
@@ -33,13 +33,4 @@ CSV.
 ### Membros da equipe:  
 
 
-[Caroline Suwaki](https://github.com/csuwaki/)  
-
-
-[Isabela Oliveira](https://github.com/isaolivlima)  
-
-
-[Natascha Weber](https://github.com/natfontanesi)  
-
-
-[Kauana Rodrigues](https://github.com/kku2020)  
+[Caroline Suwaki](https://github.com/csuwaki/)  👥 [Isabela Oliveira](https://github.com/isaolivlima) 👥 [Natascha Weber](https://github.com/natfontanesi) 👥 [Kauana Rodrigues](https://github.com/kku2020)  
