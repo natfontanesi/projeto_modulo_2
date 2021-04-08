@@ -27,6 +27,12 @@ CSV.
 -   Baixar um repositório como um arquivo;
 - Acessar, criar, atualizar ou excluir um comentário.
 
+----
+
+## Fluxograma:
+
+![Fluxograma](https://github.com/natfontanesi/projeto_modulo_2/blob/main/imagens/fluxograma%20(1).png)
+
 
 
 <div align="center">
