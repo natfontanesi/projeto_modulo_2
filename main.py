@@ -1,7 +1,7 @@
-from view import userView
-import json
+from view import Bit_Bucket_View
+from termcolor import cprint
 
-print(
+cprint(
     "Bem-vindo à API Bitbucket! Com esta API:  \n \
 \n \
 - Acesse informações públicas do usuário;  \n \
@@ -13,24 +13,22 @@ print(
 - Acesse, crie, atualize ou exclua um problema; \n \
 - Acesse, crie, atualize ou exclua um comentário. \n \
  \n \
-Insira um termo de pesquisa: ")
+Insira um termo de pesquisa: ",'green')
 
-usuario = userView()
+usuario = Bit_Bucket_View()
 usuario.set_user(input())
 
-print("Qual tipo de arquivo, JSON/CSV: ")
-usuario.set_type(input())
+
+cprint("Qual tipo de arquivo, JSON/CSV: ",'green')
+tipo_arquivo= input().lower()
+while tipo_arquivo!="json" and tipo_arquivo!="csv":
+    cprint("Tipo inválido, digite novamente!",'green')
+    tipo_arquivo= input().lower()
+usuario.set_type(tipo_arquivo)
+
 
 #perguntar em qual formato o usuário deseja a resposta
 resposta = usuario.response()
-print(f'{usuario.get_status_view()}')
-
-json_str = json.dumps(resposta)
-json_dict = json.loads(json_str)
-print(json.dumps(json_dict, indent = 3))
-
-
-
-
+cprint(f'{usuario.get_status_view()}','green')
 
 
