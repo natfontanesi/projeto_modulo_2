@@ -3,10 +3,6 @@
 <div align="center">
  
  # Projeto Final - Módulo 2
- 
-
- 
----
 
 ## BITBUCKET  API
  </div>
