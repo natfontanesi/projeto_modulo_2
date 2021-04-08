@@ -1,4 +1,4 @@
-from view import userView
+from view import Bit_Bucket_View
 from termcolor import cprint
 
 cprint(
@@ -15,7 +15,7 @@ cprint(
  \n \
 Insira um termo de pesquisa: ",'green')
 
-usuario = userView()
+usuario = Bit_Bucket_View()
 usuario.set_user(input())
 
 

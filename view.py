@@ -1,8 +1,8 @@
-from controller import Requisition_Bit_Controller
+from controller import Bit_Bucket_Controller
 
-class userView:
+class Bit_Bucket_View:
     def __init__(self):
-        self.controller = Requisition_Bit_Controller                            ()
+        self.controller = Bit_Bucket_Controller                           ()
         
     def set_user(self, user):
         self.user = user    

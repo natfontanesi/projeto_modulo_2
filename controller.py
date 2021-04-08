@@ -1,8 +1,8 @@
-from model import Bit_bucket_Model
+from model import Bit_Bucket_Model
 
-class Requisition_Bit_Controller:
+class Bit_Bucket_Controller:
     def __init__(self):
-        self.model = Bit_bucket_Model()
+        self.model = Bit_Bucket_Model()
 
     def get_user(self, user, rtrn_type):
         rtrn_obj=[]

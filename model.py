@@ -3,7 +3,7 @@ import pandas
 import json
 from termcolor import cprint 
 
-class Bit_bucket_Model():
+class Bit_Bucket_Model():
     def __init__(self):
         self.url='https://api.bitbucket.org/2.0/repositories'
 
@@ -17,7 +17,6 @@ class Bit_bucket_Model():
     def make_json(self,user):
         response = self.get(user)
         resposta =response.json()
-        
         json_str = json.dumps(resposta)
         json_dict = json.loads(json_str)
         with open('saida.json', 'w') as arq:
