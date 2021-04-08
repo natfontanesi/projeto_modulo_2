@@ -7,7 +7,7 @@ class Requisition_Bit_Controller:
     def get_user(self, user, rtrn_type):
         rtrn_obj=[]
         if rtrn_type=="csv":
-            rtrn_obj = self.model.make_csv(user)
+            rtrn_obj = self.model.convert_csv(user)
 
         elif rtrn_type=="json":
             rtrn_obj = self.model.make_json(user)

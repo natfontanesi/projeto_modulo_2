@@ -25,15 +25,11 @@ class Bit_bucket_Model():
         
         return cprint(json.dumps(json_dict, indent = 4),'green')
 
-    
-    def make_csv(self,user):
+    def convert_csv(self,user):
         response = self.get(user)
-        return self.convert_json(response.content)
-
-    def convert_json(self,json):
-        arquivo = pandas.read_json(json)
-        df= pandas.DataFrame(arquivo)
-        print(df)
+        arquivo = pandas.read_json(response.content)
+        csv= pandas.DataFrame(arquivo)
+        print(csv)
         return arquivo.to_csv('bitbucket.csv')
 
 
